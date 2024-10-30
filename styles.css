@@ -393,3 +393,14 @@ button:hover {
     }
 }
 
+@media (max-width: 480px) {
+    .product {
+        min-width: 120px; /* Further adjust for very small screens */
+        max-width: 150px; /* Further adjust for very small screens */
+    }
+
+    .scroll-button {
+        padding: 8px; /* Smaller buttons for small screens */
+    }
+}
+
