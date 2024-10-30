@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Basic CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for aligning content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Basic styling for the logo container */
+.logo {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Styling for "BEST" */
+.best {
+    color: #ff0000; /* Red color */
+     /* White border */
+    padding: 5px 10px;
+     /* Text color */
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    /* Add white outline using multiple shadows */
+    text-shadow: 
+        -1px -1px 0 #ffffff, 
+         1px -1px 0 #ffffff, 
+        -1px  1px 0 #ffffff, 
+         1px  1px 0 #ffffff;
+    font-size: 40px;
+}
+
+/* Styling for "INDIA" */
+.india {
+    color: #008000; /* Green color */
+     /* White border */
+    padding: 5px 10px;
+     /* Text color */
+     font-size: 36px;
+     font-weight: bold;
+     text-align: center;
+     /* Add white outline using multiple shadows */
+     text-shadow: 
+         -1px -1px 0 #ffffff, 
+          1px -1px 0 #ffffff, 
+         -1px  1px 0 #ffffff, 
+          1px  1px 0 #ffffff;
+     font-size: 40px;
+    border-radius: 5px;
+    font-size: 40px;
+}
+.logo h1 {
+    font-family: Arial, sans-serif;
+    font-size: 12 px;
+    font-weight: bold;
+    display: flex;
+    gap: 5px;
+}
+
+
+
+/* Header styling */
+.header {
+    background-color: #ff6f61; /* Indian spice-inspired color */
+    padding: 20px 0;
+    color: #fff;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.header .logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation Styling */
+.nav {
+    display: flex;
+    gap: 10px;
+    position: inherit;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: #ff8567;
+    border-radius: 5px;
+}
+
+/* Search Bar */
+.header-actions .search-bar {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    outline: none;
+}
+
+/* Call-to-Action Button */
+.header-actions .cta-button {
+    padding: 10px 20px;
+    background-color: #ffd700; /* Golden yellow */
+    border: none;
+    color: #333;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.header-actions .cta-button:hover {
+    background-color: #e6be00;
+}
+
+
+/* Sections */
+section {
+    padding: 20px;
+    margin: 10px 0;
+}
+
+#products .product-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+#offers ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#offers ul li {
+    background: #ffeb3b;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+.about-section {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background: url('images/best-india.jpg') no-repeat center center/cover; /* Background image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Overlay container */
+.image-overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+}
+
+/* Text overlay styling */
+.overlay-text {
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.overlay-text h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.overlay-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #ffd700;
+    color: #333;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e6be00;
+}
+
+/* Contact Section */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e64a19;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9em;
+}
