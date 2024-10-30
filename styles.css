@@ -439,3 +439,84 @@ button.cta-button:hover {
     margin: 5px 0;
     color: #555;
 }
+body, h1, h2, h3, p {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.logo h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.nav a {
+    margin: 0 15px;
+    
+    text-decoration: none;
+}
+
+#products {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Scrollable product container */
+.product-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    scroll-snap-type: x mandatory;
+}
+
+.product {
+    min-width: 200px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Transition on hover */
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+/* Image zoom effect */
+.product:hover img {
+    transform: scale(1.1);
+}
+
+.product h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 14px;
+    color: #555;
+}
