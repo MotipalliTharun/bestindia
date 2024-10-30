@@ -330,6 +330,25 @@ button:hover {
     color: #333;
     font-weight: 500;
 }
+/* Add the following styles if not already present */
+
+#new-products {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color */
+    text-align: center; /* Center the text */
+}
+
+.product-scroll-container {
+    display: flex; /* Use flexbox for horizontal layout */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+    padding: 10px 0; /* Top and bottom padding */
+    gap: 20px; /* Space between products */
+    width: calc(100% - 60px); /* Full width minus button width */
+}
+
+/* Add other necessary styles for products if not already defined */
+
 
 /* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
