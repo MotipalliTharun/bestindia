@@ -352,6 +352,10 @@ button:hover {
         flex-direction: column;
         align-items: flex-start;
     }
+    .product {
+        min-width: 150px; /* Adjust minimum width for smaller screens */
+        max-width: 200px; /* Adjust maximum width for smaller screens */
+    }
 }
 
 @media (max-width: 600px) {
@@ -378,6 +382,14 @@ button:hover {
     
     button {
         padding: 8px 16px;
+    }
+    .product {
+        min-width: 120px; /* Further adjust for very small screens */
+        max-width: 150px; /* Further adjust for very small screens */
+    }
+
+    .scroll-button {
+        padding: 8px; /* Smaller buttons for small screens */
     }
 }
 
