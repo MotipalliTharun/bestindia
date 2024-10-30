@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BEST INDIA</title>
     <link rel="stylesheet" href="styles.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -16,18 +16,13 @@
                 <span class="india">INDIA</span>
             </h1>
         </div>
-            <nav class="nav">
-                <a href="#home">Home</a>
-                <a href="#products">Products</a>
-                <a href="#offers">Offers</a>
-                <a href="#about">About Us</a>
-                <a href="#contact">Contact</a>
-            </nav>
-            <!-- <div class="header-actions">
-                <input type="text" placeholder="Search products..." class="search-bar">
-                <button class="cta-button">Shop Now</button>
-            </div> -->
-        </div>
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#offers">Offers</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
     <section id="about" class="about-section">
         <div class="image-overlay">
@@ -39,7 +34,8 @@
         </div>
     </section>
 
-    <!-- Products Section -->
+
+    <!-- Products Section with Scrollable View and Transition Effects -->
     <section id="products">
         <h2>Our Products</h2>
         <div class="product-container">
@@ -54,59 +50,161 @@
                 <p>Aromatic spices sourced directly from India.</p>
             </div>
             <div class="product">
-                <img src="images/diary.jpg" alt="diary">
-                <h3>Diary Products</h3>
-                <p> Tasty fresh diary Products directly from India.</p>
+                <img src="images/diary.jpg" alt="Dairy">
+                <h3>Dairy Products</h3>
+                <p>Fresh dairy products sourced from India.</p>
             </div>
             <div class="product">
-                <img src="images/sweets.jpg" alt="sweets">
-                <h3>Indian sweets</h3>
-                <p>Tasty Indian sweets .</p>
+                <img src="images/sweets.jpg" alt="Sweets">
+                <h3>Indian Sweets</h3>
+                <p>Delicious traditional Indian sweets.</p>
             </div>
             <div class="product">
                 <img src="images/item.jpg" alt="Indian Items">
-                <h3>Indian Spices</h3>
-                <p>Differnt types of indian items.</p>
+                <h3>Indian Items</h3>
+                <p>Various Indian items for daily use.</p>
             </div>
             <div class="product">
                 <img src="images/indiansnacks.jpg" alt="Indian Snacks">
-                
                 <h3>Indian Snacks</h3>
                 <p>Popular Indian snacks for every occasion.</p>
             </div>
-            <!-- Add more products as needed -->
+        </div>
+    </section>
+    <!-- Offers Section -->
+    <section id="offers">
+        <div class="offers-container">
+            <h2>Special Offers</h2>
+            <p>Check out our exciting discounts and offers on select products!</p>
+            <div class="offer-list">
+                <div class="offer-item">
+                    <i class="icon">🔥</i>
+                    <p>10% off on all spices</p>
+                </div>
+                <div class="offer-item">
+                    <i class="icon">🍚</i>
+                    <p>Buy 2 packs of rice, get 1 free</p>
+                </div>
+                <div class="offer-item">
+                    <i class="icon">💸</i>
+                    <p>Flat 5% discount on all orders above $50</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Offers Section -->
-    <section id="offers">
-        <h2>Special Offers</h2>
-        <p>Check out our exciting discounts and offers on select products!</p>
-        <ul>
-            <li>10% off on all spices</li>
-            <li>Buy 2 packs of rice, get 1 free</li>
-            <li>Flat 5% discount on all orders above $50</li>
-        </ul>
-    </section>
-
-    <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+            <div class="contact-poster">
+                <h3>Get in Touch!</h3>
+                <p>If you have any questions, feel free to reach out to us.</p>
+                <p><strong>Phone:</strong> +1 234 567 890</p>
+                <p><strong>Email:</strong> info@bestindia.com</p>
+            </div>
+        </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 Indian Grocery Store. All rights reserved.</p>
-    </footer>
+    <!-- Add CSS for Scrollable Products with Transitions -->
+    <style>
+        /* General styling */
+        body, h1, h2, h3, p {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .logo h1 {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .nav a {
+            margin: 0 15px;
+            
+            text-decoration: none;
+        }
+
+        #products {
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        /* Scrollable product container */
+        .product-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 20px;
+            scroll-snap-type: x mandatory;
+        }
+
+        .product {
+            min-width: 200px;
+            flex: 0 0 auto;
+            scroll-snap-align: start;
+            padding: 15px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Transition on hover */
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            transition: transform 0.3s ease;
+        }
+
+        /* Image zoom effect */
+        .product:hover img {
+            transform: scale(1.1);
+        }
+
+        .product h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .product p {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
 
 </body>
 </html>
